@@ -4,7 +4,6 @@ import com.acme.emprendimientos.entity.Emprendimiento;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Getter;
 import lombok.Setter;
-
 import java.io.Serializable;
 import java.math.BigInteger;
 import java.util.Collection;

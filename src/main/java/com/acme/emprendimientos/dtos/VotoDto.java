@@ -5,7 +5,6 @@ import com.acme.emprendimientos.enums.VotoGenerado;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Getter;
 import lombok.Setter;
-
 import java.io.Serializable;
 import java.util.Date;
 

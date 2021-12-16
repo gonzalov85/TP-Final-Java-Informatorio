@@ -9,7 +9,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.*;
-
 import javax.validation.Valid;
 import java.util.ArrayList;
 import java.util.Date;
@@ -41,7 +40,7 @@ public class UsuarioController {
             usuarioService.guardarUsuario(usuario);
             return ResponseEntity.status(HttpStatus.CREATED).body(UsuarioDto.UsuarioAUsuarioDto(usuario));
         }catch(Exception e) {
-            return new ResponseEntity<>("Error: ya existe se encuentra resgistrado el mail " + usuario.getEmail(), HttpStatus.BAD_REQUEST);
+            return new ResponseEntity<>("Error: ya existe un Usuario registrado con el Email " + usuario.getEmail(), HttpStatus.BAD_REQUEST);
         }
     }
     @PutMapping(value = "/{id}")
