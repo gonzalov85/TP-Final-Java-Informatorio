@@ -15,7 +15,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{        \r\n    \r\n    \"nombre\": \"asd\",\r\n    \"apellido\": \"asda\",\r\n    \"email\": \"asd@hotmail.com\",\r\n    \"ciudad\": \"corrientes\",\r\n    \"provincia\": \"chaco\",    \r\n    \"password\": \"123456\",\r\n    \"pais\": \"argentina\",\r\n    \"tipo\": \"OWNER\"\r\n\r\n}\r\n    ",
+							"raw": "{        \r\n    \r\n    \"nombre\": \"milhouse\",\r\n    \"apellido\": \"vanhooter\",\r\n    \"email\": \"milhouse@hotmail.com\",\r\n    \"ciudad\": \"corrientes\",\r\n    \"provincia\": \"chaco\",    \r\n    \"password\": \"123456\",\r\n    \"pais\": \"argentina\",\r\n    \"tipo\": \"OWNER\"\r\n\r\n}\r\n    ",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -196,7 +196,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/emprendimiento/buscarPorTag/tenologia",
+							"raw": "http://localhost:8080/emprendimiento/buscarPorTag/tecnologia",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -205,7 +205,7 @@
 							"path": [
 								"emprendimiento",
 								"buscarPorTag",
-								"tenologia"
+								"tecnologia"
 							]
 						}
 					},
@@ -218,7 +218,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "    {\r\n        \r\n        \"nombre\": \"Emprendimiento4\",\r\n        \"descripcion\": \"descripcionEmprendimiento4\",\r\n        \"contenido\": \"contenidoEmprendimiento4\",\r\n        \"recaudacion\": 300000,\r\n        \"publicado\": true,\r\n        \"tags\": \r\n            [{ \r\n                \"nombre\": \"tecnologia\"\r\n\r\n                             \r\n            },{\r\n                \"nombre\": \"arte\"\r\n            }],\r\n        \"urls\": [\r\n            {\r\n                 \r\n                \"name\": \"url2\"\r\n            },\r\n            {\r\n                \r\n                \"name\": \"url2\"\r\n            }\r\n        ]\r\n    }",
+							"raw": "    {\r\n        \r\n        \"nombre\": \"Emprendimiento5\",\r\n        \"descripcion\": \"descripcionEmprendimiento5\",\r\n        \"contenido\": \"contenidoEmprendimiento5\",\r\n        \"recaudacion\": 300000,\r\n        \"publicado\": true,\r\n        \"tags\": \r\n            [{ \r\n                \"nombre\": \"tecnologia\"\r\n\r\n                             \r\n            },{\r\n                \"nombre\": \"arte\"\r\n            }],\r\n        \"urls\": [\r\n            {\r\n                 \r\n                \"name\": \"url2\"\r\n            },\r\n            {\r\n                \r\n                \"name\": \"url2\"\r\n            }\r\n        ]\r\n    }",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -247,7 +247,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "    {\r\n        \r\n        \"nombre\": \"emprendimiento3\",\r\n        \"descripcion\": \"descripcionEmp3\",\r\n        \"contenido\": \"contenidoEmp3\",\r\n        \"recaudacion\": 1000000,\r\n        \"publicado\": true,\r\n        \"tags\": \r\n            [{ \r\n                \"nombre\": \"cartas\"\r\n\r\n                             \r\n            },{\r\n                \"nombre\": \"truco\"\r\n            }],\r\n        \"urls\": [\r\n            {\r\n                 \r\n                \"name\": \"url3\"\r\n            },\r\n            {\r\n                \r\n                \"name\": \"url3\"\r\n            }\r\n        ]\r\n    }",
+							"raw": "    {\r\n        \r\n        \"nombre\": \"emprendimientooo5\",\r\n        \"descripcion\": \"descripcionEmp5\",\r\n        \"contenido\": \"contenidoEmp5\",\r\n        \"recaudacion\": 1000000,\r\n        \"publicado\": true,\r\n        \"tags\": \r\n            [{ \r\n                \"nombre\": \"cartas\"\r\n\r\n                             \r\n            },{\r\n                \"nombre\": \"truco\"\r\n            }],\r\n        \"urls\": [\r\n            {\r\n                 \r\n                \"name\": \"url3\"\r\n            },\r\n            {\r\n                \r\n                \"name\": \"url3\"\r\n            }\r\n        ]\r\n    }",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -255,7 +255,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/emprendimiento/3",
+							"raw": "http://localhost:8080/emprendimiento/5",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -263,7 +263,7 @@
 							"port": "8080",
 							"path": [
 								"emprendimiento",
-								"3"
+								"5"
 							]
 						}
 					},
@@ -296,7 +296,7 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/emprendimiento/3",
+							"raw": "http://localhost:8080/emprendimiento/5",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -304,7 +304,7 @@
 							"port": "8080",
 							"path": [
 								"emprendimiento",
-								"3"
+								"5"
 							]
 						}
 					},
@@ -342,7 +342,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "    {\r\n        \"detallesEvento\": \"detalleEvento2\",  \r\n        \"estadoEvento\": \"ABIERTO\",\r\n        \"premio\": 100000000,\r\n        \"fechaCierre\":\"30-12-2021 00:00:00\"\r\n    }",
+							"raw": "    {\r\n        \"detallesEvento\": \"detalleEvento3\",  \r\n        \"estadoEvento\": \"ABIERTO\",\r\n        \"premio\": 100000000,\r\n        \"fechaCierre\":\"30-12-2021 00:00:00\"\r\n    }",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -371,7 +371,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "    {\r\n    \"idEvento\": 6,\r\n    \"detallesEvento\": \"detalleEvento8\",\r\n    \"fechaCreacion\": \"15-12-2021 20:44:39\",\r\n    \"fechaCierre\": null,\r\n    \"estadoEvento\": \"EN_CURSO\",\r\n    \"premio\": 114111111111111\r\n\r\n    }",
+							"raw": "    {\r\n    \"detallesEvento\": \"detalleEvento3\",\r\n    \"fechaCreacion\": \"15-12-2021 20:44:39\",\r\n    \"fechaCierre\": null,\r\n    \"estadoEvento\": \"EN_CURSO\",\r\n    \"premio\": 34234343\r\n\r\n    }",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -379,7 +379,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/evento/2",
+							"raw": "http://localhost:8080/evento/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -387,7 +387,7 @@
 							"port": "8080",
 							"path": [
 								"evento",
-								"2"
+								"1"
 							]
 						}
 					},
@@ -399,7 +399,17 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": ""
+							"raw": "http://localhost:8080/evento/rankingPorEventoId/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"evento",
+								"rankingPorEventoId",
+								"1"
+							]
 						}
 					},
 					"response": []
@@ -410,7 +420,7 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/evento/1",
+							"raw": "http://localhost:8080/evento/3",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -418,7 +428,7 @@
 							"port": "8080",
 							"path": [
 								"evento",
-								"1"
+								"3"
 							]
 						}
 					},
@@ -444,7 +454,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/voto/crearVotoIdUsuario/1/IdEvento/2/IdEmprendimiento/2/StringGeneradoPor/1",
+							"raw": "http://localhost:8080/voto/crearVotoIdUsuario/3/IdEvento/1/IdEmprendimiento/2/StringGeneradoPor/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -453,9 +463,9 @@
 							"path": [
 								"voto",
 								"crearVotoIdUsuario",
-								"1",
+								"3",
 								"IdEvento",
-								"2",
+								"1",
 								"IdEmprendimiento",
 								"2",
 								"StringGeneradoPor",
@@ -491,7 +501,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/voto/buscarPorUsername/ana@hotmail.com",
+							"raw": "http://localhost:8080/voto/buscarPorUsername/homero@hotmail.com",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -500,7 +510,7 @@
 							"path": [
 								"voto",
 								"buscarPorUsername",
-								"ana@hotmail.com"
+								"homero@hotmail.com"
 							]
 						}
 					},
