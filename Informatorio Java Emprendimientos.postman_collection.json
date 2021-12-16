@@ -117,6 +117,27 @@
 					"response": []
 				},
 				{
+					"name": "Obtener Usuario Desde Fecha",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/usuario/buscarPorFecha/18-12-2021",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"usuario",
+								"buscarPorFecha",
+								"18-12-2021"
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "Modificar Usuario",
 					"request": {
 						"method": "PUT",
@@ -160,27 +181,6 @@
 							"path": [
 								"usuario",
 								"4"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Obtener Usuario Desde Fecha",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:8080/usuario/buscarPorFecha/12-12-2021",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"usuario",
-								"buscarPorFecha",
-								"12-12-2021"
 							]
 						}
 					},
