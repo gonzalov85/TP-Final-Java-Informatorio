@@ -70,7 +70,7 @@ public class EmprendimientoController {
             for (Emprendimiento s: emprendimientos) listaDtosEmp.add(EmprendimientoDto.EmprendimientoAEmpDto(s));
             return ResponseEntity.ok(listaDtosEmp);
         }
-        return new ResponseEntity<>("No hay emprendimiento que coincida con su busqueda: " + tag, HttpStatus.NOT_FOUND);
+        return new ResponseEntity<>("No hay emprendimientos que coincidan con su busqueda: " + tag, HttpStatus.NOT_FOUND);
     }
     @GetMapping("/buscarSinPublicar")
     public ResponseEntity<?> buscarEmprSinPublicar(){

@@ -62,7 +62,7 @@ public class UsuarioController {
             usuarioService.guardarUsuario(usuario.get());
             return new ResponseEntity<>(UsuarioDto.UsuarioAUsuarioDto(usuario.get()), HttpStatus.OK);
         }catch(Exception e){
-            return new ResponseEntity<>("Error: ya existe un Usuario registrado con el Email: " + usuario.get().getEmail(), HttpStatus.BAD_REQUEST);}
+            return new ResponseEntity<>("Error: ya existe un usuario registrado con el email: " + usuario.get().getEmail(), HttpStatus.BAD_REQUEST);}
     }
 
     @DeleteMapping(value = "{id}")

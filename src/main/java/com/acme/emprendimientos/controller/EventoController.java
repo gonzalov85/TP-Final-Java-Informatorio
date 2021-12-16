@@ -39,7 +39,7 @@ public class EventoController {
             eventoService.eliminarEvento((long)idEvento);
             return ResponseEntity.ok("El evento fue eliminado exitosamente");
         }
-        return new ResponseEntity<>("No hay eventos identificados con esa id o ingresó un dato invalido", HttpStatus.NOT_FOUND);
+        return new ResponseEntity<>("No hay eventos identificados con esa id o ingresó un dato inválido", HttpStatus.NOT_FOUND);
     }
     @PutMapping(value = "/{id}")
     ResponseEntity<?> modifiarEvento(@RequestBody @Valid Evento eventoModif, @PathVariable(value = "id") @Valid int idEvento){
