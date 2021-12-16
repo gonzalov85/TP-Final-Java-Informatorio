@@ -1,0 +1,512 @@
+{
+	"info": {
+		"_postman_id": "00a373cc-6817-4502-b17e-8cd253b99202",
+		"name": "Informatorio Java Emprendimientos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Usuario",
+			"item": [
+				{
+					"name": "Crear Usuario",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{        \r\n    \r\n    \"nombre\": \"asd\",\r\n    \"apellido\": \"asda\",\r\n    \"email\": \"asd@hotmail.com\",\r\n    \"ciudad\": \"corrientes\",\r\n    \"provincia\": \"chaco\",    \r\n    \"password\": \"123456\",\r\n    \"pais\": \"argentina\",\r\n    \"tipo\": \"OWNER\"\r\n\r\n}\r\n    ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/usuario/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"usuario",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar Usuario por Id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/usuario/buscarPorId/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"usuario",
+								"buscarPorId",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar Usuario por Ciudad",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/usuario/buscarPorCiudad?ciudad=corrientes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"usuario",
+								"buscarPorCiudad"
+							],
+							"query": [
+								{
+									"key": "ciudad",
+									"value": "corrientes"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener Todos los Usuarios",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/usuario/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"usuario",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modificar Usuario",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 3,\r\n    \"nombre\": \"Bart\",\r\n    \"apellido\": \"Simpson\",\r\n    \"email\": \"bart@hotmail.com\",\r\n    \"ciudad\": \"resistencia\",\r\n    \"provincia\": \"chaco\",\r\n    \"password\": \"123456\",\r\n    \"pais\": \"argentina\",\r\n    \"tipo\": \"USUARIO\",\r\n    \"fechaCreacion\": \"04-12-2021 07:56:32\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/usuario/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"usuario",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Borrar Usuario",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/usuario/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"usuario",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Emprendimiento",
+			"item": [
+				{
+					"name": "Obtener Todos los Emprendimientos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/emprendimiento/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"emprendimiento",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar Emp. por Tag",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/emprendimiento/buscarPorTag/tenologia",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"emprendimiento",
+								"buscarPorTag",
+								"tenologia"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear Emprendimiento",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \r\n        \"nombre\": \"Emprendimiento4\",\r\n        \"descripcion\": \"descripcionEmprendimiento4\",\r\n        \"contenido\": \"contenidoEmprendimiento4\",\r\n        \"recaudacion\": 300000,\r\n        \"publicado\": true,\r\n        \"tags\": \r\n            [{ \r\n                \"nombre\": \"tecnologia\"\r\n\r\n                             \r\n            },{\r\n                \"nombre\": \"arte\"\r\n            }],\r\n        \"urls\": [\r\n            {\r\n                 \r\n                \"name\": \"url2\"\r\n            },\r\n            {\r\n                \r\n                \"name\": \"url2\"\r\n            }\r\n        ]\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/emprendimiento/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"emprendimiento",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modificar Emprendimiento",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \r\n        \"nombre\": \"emprendimiento3\",\r\n        \"descripcion\": \"descripcionEmp3\",\r\n        \"contenido\": \"contenidoEmp3\",\r\n        \"recaudacion\": 1000000,\r\n        \"publicado\": true,\r\n        \"tags\": \r\n            [{ \r\n                \"nombre\": \"cartas\"\r\n\r\n                             \r\n            },{\r\n                \"nombre\": \"truco\"\r\n            }],\r\n        \"urls\": [\r\n            {\r\n                 \r\n                \"name\": \"url3\"\r\n            },\r\n            {\r\n                \r\n                \"name\": \"url3\"\r\n            }\r\n        ]\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/emprendimiento/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"emprendimiento",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener Emp. Sin Publicar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/emprendimiento/buscarSinPublicar/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"emprendimiento",
+								"buscarSinPublicar",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Borrar Emprendimiento",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/emprendimiento/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"emprendimiento",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Evento",
+			"item": [
+				{
+					"name": "Obtener Todos los Eventos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/evento/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"evento",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear Evento",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"detallesEvento\": \"detalleEvento2\",  \r\n        \"estadoEvento\": \"ABIERTO\",\r\n        \"premio\": 100000000,\r\n        \"fechaCierre\":\"30-12-2021 00:00:00\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/evento/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"evento",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modificar Evento",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n    \"idEvento\": 6,\r\n    \"detallesEvento\": \"detalleEvento8\",\r\n    \"fechaCreacion\": \"15-12-2021 20:44:39\",\r\n    \"fechaCierre\": null,\r\n    \"estadoEvento\": \"EN_CURSO\",\r\n    \"premio\": 114111111111111\r\n\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/evento/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"evento",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Generar Ranking por Evento",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Borrar Evento",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/evento/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"evento",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Voto",
+			"item": [
+				{
+					"name": "Crear Voto",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/voto/crearVotoIdUsuario/1/IdEvento/2/IdEmprendimiento/2/StringGeneradoPor/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"voto",
+								"crearVotoIdUsuario",
+								"1",
+								"IdEvento",
+								"2",
+								"IdEmprendimiento",
+								"2",
+								"StringGeneradoPor",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener Votos de Todos los Usuarios",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/voto/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"voto",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener Voto de un Usuario",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/voto/buscarPorUsername/ana@hotmail.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"voto",
+								"buscarPorUsername",
+								"ana@hotmail.com"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
