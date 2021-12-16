@@ -1,5 +1,6 @@
 package com.acme.emprendimientos.dtos;
 
+import com.acme.emprendimientos.entity.Emprendimiento;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Getter;
 import lombok.Setter;

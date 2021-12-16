@@ -1,5 +1,7 @@
 package com.acme.emprendimientos.dtos;
 
+import com.acme.emprendimientos.entity.Usuario;
+import com.acme.emprendimientos.enums.TipoUsuario;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Getter;
 import lombok.Setter;
@@ -9,8 +11,7 @@ import java.util.Date;
 
 public class UsuarioDto implements Serializable {
 
-    @Getter
-    @Setter
+    @Getter @Setter
     private Long id;
 
     @Getter @Setter
@@ -30,6 +31,7 @@ public class UsuarioDto implements Serializable {
     @Getter @Setter
     @JsonFormat(pattern = "dd-MM-yyyy HH:mm:ss")
     private Date fechaCreacion;
+
 
     public UsuarioDto( String nom, String ape, String email, String ciudad, String provincia, String pais, TipoUsuario tipo){
         super();

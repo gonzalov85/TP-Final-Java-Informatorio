@@ -1,5 +1,8 @@
 package com.acme.emprendimientos.controller;
 
+import com.acme.emprendimientos.dtos.EmprendimientoDto;
+import com.acme.emprendimientos.entity.Emprendimiento;
+import com.acme.emprendimientos.service.EmprendimientoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

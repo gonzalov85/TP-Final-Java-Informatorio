@@ -1,5 +1,6 @@
 package com.acme.emprendimientos.entity;
 
+import com.acme.emprendimientos.enums.EstadoEvento;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Getter;
 import lombok.Setter;

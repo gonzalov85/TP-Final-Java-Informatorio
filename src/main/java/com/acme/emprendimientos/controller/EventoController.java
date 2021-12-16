@@ -1,5 +1,9 @@
 package com.acme.emprendimientos.controller;
 
+import com.acme.emprendimientos.entity.Evento;
+import com.acme.emprendimientos.entity.Voto;
+import com.acme.emprendimientos.service.EventoService;
+import com.acme.emprendimientos.service.VotoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

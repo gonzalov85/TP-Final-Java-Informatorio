@@ -1,5 +1,15 @@
 package com.acme.emprendimientos.controller;
 
+import com.acme.emprendimientos.dtos.VotoDto;
+import com.acme.emprendimientos.entity.Emprendimiento;
+import com.acme.emprendimientos.entity.Evento;
+import com.acme.emprendimientos.entity.Usuario;
+import com.acme.emprendimientos.entity.Voto;
+import com.acme.emprendimientos.enums.VotoGenerado;
+import com.acme.emprendimientos.repository.EmprendimientoRepository;
+import com.acme.emprendimientos.repository.EventoRepository;
+import com.acme.emprendimientos.repository.UsuarioRepository;
+import com.acme.emprendimientos.service.VotoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

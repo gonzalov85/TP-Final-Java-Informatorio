@@ -1,5 +1,7 @@
 package com.acme.emprendimientos.dtos;
 
+import com.acme.emprendimientos.entity.Voto;
+import com.acme.emprendimientos.enums.VotoGenerado;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Getter;
 import lombok.Setter;

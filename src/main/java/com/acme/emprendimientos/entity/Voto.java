@@ -1,5 +1,6 @@
 package com.acme.emprendimientos.entity;
 
+import com.acme.emprendimientos.enums.VotoGenerado;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Getter;
