@@ -36,7 +36,7 @@ public class VotoDto implements Serializable {
         this.fechaDeCreacion = fechaCreacion;
         this.creadoPor=creadoPor;
     }
-    
+
     public VotoDto(){}
 
     public static VotoDto VotoAVotoDto(Voto s){
